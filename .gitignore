@@ -136,4 +136,5 @@ dmypy.json
 /data
 
 # images
+data_images/
 data_prep/images/

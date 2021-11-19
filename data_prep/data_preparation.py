@@ -17,6 +17,8 @@ def data_prep():
                           'caption_alt_text_description']
                    )
 
+    df = df.replace(to_replace='[\r\n]', value=' ', regex=True)
+
     df.to_csv('data/preprocessed_data.tsv', sep='\t', index=False)
     return df.describe()
 
